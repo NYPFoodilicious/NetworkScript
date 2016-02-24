@@ -1,0 +1,17 @@
+1. Launch VMWare Workstation and start the Ubuntu VM. If the VM is not found, create a new VM and install with the OS. Follow the VM config below:
+VM Name: RANCID
+vCPU: 1
+Memory: 4GB RAM
+HDD: 20GB storage
+Network: Bridged
+ISO image: To be given
+Remove: Floppy, Printer
+2. Become root, and install the Subversion Version Control System:
+In addition to Subversion we will specify to install telnet and the mutt email client.
+$ sudo bash
+# apt-get install subversion telnet mutt
+3. Install Rancid itself
+# apt-get install rancid
+- It will prompt with a warning - Select <OK> and press ENTER to continue.
+- It will give you another warning about making a backup copy of your rancid data. We have no data, so select <YES> and press ENTER to continue.
+4. Add an alias for the rancid user in /etc/aliases file
